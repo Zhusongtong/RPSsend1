@@ -1,4 +1,4 @@
-  a股基于rps 量化选股  
+  a股基于欧奈尔rps 量化选股  
 1.运行prps--all.py 文件  
 2.运行设置   
   市场选择：  默认  market = 0,  0 全部,  1 cyb  2 zz500  3 gz2000 4 hs300 zz1000
