@@ -30,7 +30,7 @@
 程序运行后，会根据 RPS 筛选结果输出选股列表。
 
 ### 示例图片
-![RPS 筛选结果]([https://github.com/user-attachments/assets/eb638cf7-540f-408f-9061-4c9ad7b28bc3/600x400)  
+([https://github.com/user-attachments/assets/eb638cf7-540f-408f-9061-4c9ad7b28bc3/600x400)  
 ---
 
 ## 4. 对接飞书机器人
@@ -54,8 +54,7 @@
 ---
 
 ## 联系方式
-如有问题，请联系：`https://nyseai.cn`
-扫描下方二维码，关注我们的微信公众号，获取更多量化投资资讯和工具：
+扫描下方二维码，关注微信公众号，获取更多量化投资资讯和工具：
 
 <img width="129" alt="image" src="https://github.com/user-attachments/assets/b4cadf73-a7ca-4116-8614-337d9d7b07d4" />
 
