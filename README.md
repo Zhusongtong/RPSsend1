@@ -36,7 +36,7 @@ op:操作分为买入、卖出、持仓、空仓；keep:当前操作的持续天
 
 ## 4. 对接飞书机器人
 将筛选结果通过飞书机器人发送。
-<img width="161" alt="1735492935191" src="https://github.com/user-attachments/assets/c5c63a56-910d-4ae0-ba68-3212571903c7" />
+<img width="161" alt="image" src="https://github.com/user-attachments/assets/c5c63a56-910d-4ae0-ba68-3212571903c7" />
 
 
 
