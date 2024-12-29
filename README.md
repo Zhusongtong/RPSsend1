@@ -28,15 +28,15 @@
 
 ## 3. 输出结果
 程序运行后，会根据 RPS 筛选结果输出选股列表。
+![image](https://github.com/user-attachments/assets/834091bc-8f5c-4c08-887d-4a69937f0cc4)
 
-### 示例图片
 
 
 
 ## 4. 对接飞书机器人
 将筛选结果通过飞书机器人发送。
-<img width="122" alt="1735281932549" src="https://github.com/user-attachments/assets/1eeccc88-9b31-41d9-80a2-274d02940ade" />
----
+<img width="1" alt="1735281932549" src="https://github.com/user-attachments/assets/1eeccc88-9b31-41d9-80a2-274d02940ade" />
+
 
 ## 使用步骤
 1. 运行 `prps--all.py` 文件。
@@ -44,14 +44,14 @@
 3. 查看 RPS 筛选结果。
 4. 将结果对接飞书机器人。
 
----
+
 
 ## 注意事项
 - 确保 Python 环境已安装所需依赖。
 - 日期格式必须为 `YYYY-MM-DD`。
 - 飞书机器人需要提前配置并获取 ID。
 
----
+
 
 ## 联系方式
 扫描下方二维码，关注微信公众号，获取更多量化投资资讯和工具：
@@ -59,4 +59,4 @@
 <img width="129" alt="image" src="https://github.com/user-attachments/assets/b4cadf73-a7ca-4116-8614-337d9d7b07d4" />
 
 
----
+
