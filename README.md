@@ -29,6 +29,8 @@
 ## 3. 输出结果
 程序运行后，会根据 RPS 筛选结果输出选股列表。
 ![image](https://github.com/user-attachments/assets/834091bc-8f5c-4c08-887d-4a69937f0cc4)
+op:操作分为买入、卖出、持仓、空仓；keep:当前操作的持续天数；
+分为rps 120/60/20/5天，rps值越高，股票/板块越强；
 
 
 
