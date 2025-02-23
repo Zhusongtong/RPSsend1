@@ -1,12 +1,12 @@
-name: Run Python Scripts Daily
+name: Run prps--all Daily
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # UTC 0:00 相当于北京时间 8:00
-  workflow_dispatch:  # 允许手动运行
+    - cron: "0 0 * * *"  # UTC 0:00 = 北京时间 8:00
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
-  run_scripts:
+  run_prps_script:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +23,4 @@ jobs:
           pip install numpy pandas requests
 
       - name: Run prps script
-        run: python prps--all\ copy.py  # 注意：如果文件名有空格，可能需要处理
-
-      - name: Run 1013sendwechat script
-        run: python 1013sendwechat.py
+        run: python prps--all.py
