@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 
 # 读取 CSV 文件
-file_path = "/Users/atlas/Downloads/quant_test/1013.csv"
+file_path = "1013.csv"
 df = pd.read_csv(file_path)
 
 # 确保日期列解析正确
