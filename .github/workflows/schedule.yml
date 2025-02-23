@@ -3,7 +3,7 @@ name: Run prps--all Daily
 on:
   schedule:
     - cron: "0 0 * * *"  # UTC 0:00 = 北京时间 8:00
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:  # 允许手动运行
 
 jobs:
   run_prps_script:
@@ -16,11 +16,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"  # 选择适合的 Python 版本
+          python-version: "3.10"  # 选择合适的 Python 版本
 
       - name: Install dependencies
         run: |
-          pip install numpy pandas requests
+          pip install numpy pandas requests tushare
 
       - name: Run prps script
         run: python prps--all.py
