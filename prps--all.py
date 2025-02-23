@@ -584,24 +584,27 @@ def patquant(market,n):
     time2 = time.time() -time1
     return df
 
-etf_url = 'https://open.feishu.cn/open-apis/bot/v2/hook/a332e317-b54d-462f-b724-a27ac168ae0d'
-
 def rpspushfs(context):
-   
-    ##
-    url = etf_url
+    """
+    Push notifications to WeChat via Server Chan
+    Args:
+        context: The message content to be sent
+    Returns:
+        Server response text
+    """
+    url = f'https://sctapi.ftqq.com/SCT27077TGYSsmGdzCUzGJAgPDN8kaH1E.send'
+    
+    # Server Chan expects title and desp parameters
+    payload = {
+        'title': 'Stock Analysis Update',
+        'desp': context
+    }
+    
     headers = {
-            'Content-Type': 'application/json'
-            }
-    ##
-    payload_message = {
-            "msg_type": "text",
-            "content": {
-                    "text": context
-                    }
-            }
-
-    response = requests.request("POST", url, headers=headers, data=json.dumps(payload_message))
+        'Content-Type': 'application/x-www-form-urlencoded'
+    }
+    
+    response = requests.post(url, headers=headers, data=payload)
     return response.text
 def calcrpstxt(df):
     df = df.sort_values(by='pchg',ascending=False)
@@ -714,21 +717,17 @@ if __name__ == '__main__':
     result2s = df[(df['date'] ==today) & (df['industry2'] =='家电零部件Ⅱ') & (df['OBV_trend_length'] > 5) ]
     resultTTTTs = df[(df['date'] ==today) & (df['pchg'] >=15)  ]
 
+import subprocess
 
+# 运行 1013sendwechat.py 并获取输出
+process = subprocess.run(["python", "1013sendwechat.py"], capture_output=True, text=True)
 
+# 打印执行结果
+print("1013sendwechat.py 执行结果：")
+print(process.stdout)
 
-
-
-
-
-
-
-
-
-
-   
-    
-    
-
-    
+# 如果发生错误，打印错误信息
+if process.stderr:
+    print("错误信息：")
+    print(process.stderr)
     
